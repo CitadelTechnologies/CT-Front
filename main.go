@@ -3,12 +3,12 @@ package main
 import (
     "log"
     "net/http"
-    "8thw-front/routing"
+    "thw-front/routing"
 )
 
 func main() {
 
     router := routing.NewRouter()
 
-    log.Fatal(http.ListenAndServe(":80", router))
+    log.Fatal(http.ListenAndServe(":8880", router))
 }

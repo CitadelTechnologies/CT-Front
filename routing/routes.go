@@ -2,7 +2,7 @@ package routing
 
 import(
     "net/http"
-    "8thw-front/renderer"
+    "thw-front/renderer"
 )
 
 type Route struct {
