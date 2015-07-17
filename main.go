@@ -1,14 +1,16 @@
 package main
 
 import (
-    "log"
     "net/http"
     "thw-front/routing"
+    "os"
 )
 
 func main() {
 
     router := routing.NewRouter()
 
-    log.Fatal(http.ListenAndServe(":8880", router))
+    port := os.Args[1]
+
+	http.ListenAndServe(":" + port, router)
 }
