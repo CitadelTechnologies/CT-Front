@@ -3,14 +3,14 @@ package main
 import (
     "net/http"
     "thw-front/routing"
-    "os"
+    gs "github.com/Kern046/GleipnirServer"
 )
 
 func main() {
 
+    gs.Initialize()
+
     router := routing.NewRouter()
 
-    port := os.Args[1]
-
-	http.ListenAndServe(":" + port, router)
+    http.ListenAndServe(":" + gs.Server.DedicatedPort, router)
 }
