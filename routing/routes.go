@@ -16,15 +16,21 @@ type Routes []Route
 
 var routes = Routes{
     Route{
-        "Get page",
+        "Get index",
         "GET",
-        "/{view}",
+        "/",
         renderer.RenderPage,
     },
     Route{
         "Get resource",
         "GET",
-        "/cdn/{resource}",
+        "/cdn/{type}/{resource}",
         renderer.RenderResource,
+    },
+    Route{
+        "Get page",
+        "GET",
+        "/app/{view}",
+        renderer.RenderPage,
     },
 }

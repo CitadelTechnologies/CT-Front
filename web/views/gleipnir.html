@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gleipnir</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="all" type="text/css" href="http://127.0.0.1:8880/cdn/css/gleipnir.css">
+        <link rel="stylesheet" media="all" type="text/css" href="http://127.0.0.1:8880/cdn/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Gleipnir <span>Engine Monitoring</span></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                Engine :
+                                <span id="engine-checkbox" class="checkbox">
+                                    <input data-on="shutdownKernel" data-off="connect" type="checkbox">
+                                    <label data-on="ON" data-off="OFF"></label>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Services :
+                                <span id="services-checkbox" class="checkbox">
+                                    <input data-on="shutdownKernelServices" data-off="runKernel" type="checkbox">
+                                    <label data-on="ON" data-off="OFF"></label>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div>
+            <div id="kernel">
+                <h1>
+                    Kernel
+                </h1>
+                <div class="container flex-container">
+                    <div id="memory-data">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Consumed memory : <span id="memory-consumed" class="badge">0B</span>
+                            </li>
+                            <li class="list-group-item">
+                                Allocated memory : <span id="memory-allocated" class="badge">0B</span>
+                            </li>
+                            <li class="list-group-item">
+                                Max memory : <span id="memory-max" class="badge">0B</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div id="memory-gauge"></div>
+                    </div>
+                    <div>
+                        <div id="cpu-gauge"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <h1>
+                    Services
+                </h1>
+                <div id="services-list" class="container flex-container">
+                </div>
+            </div>
+        </div>
+        <script src="http://127.0.0.1:8880/cdn/javascript/jquery-2.1.4.min.js" type="text/javascript"></script>
+        
+        <script src="http://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+        <script src="http://code.highcharts.com/highcharts-more.js" type="text/javascript"></script>
+        <script src="http://code.highcharts.com/modules/solid-gauge.js" type="text/javascript"></script>
+        
+        <script src="http://127.0.0.1:8880/cdn/javascript/gleipnir_monitor.js" type="application/ecmascript"></script>
+        <script src="http://127.0.0.1:8880/cdn/javascript/gleipnir.js" type="application/ecmascript"></script>
+        <script src="http://127.0.0.1:8880/cdn/javascript/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>
