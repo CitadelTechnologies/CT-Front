@@ -1,0 +1,53 @@
+html {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6e7896+0,3f4c6b+100 */
+	background: #6e7896; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #6e7896 0%, #3f4c6b 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#6e7896), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #6e7896 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #6e7896 0%,#3f4c6b 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #6e7896 0%,#3f4c6b 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #6e7896 0%,#3f4c6b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e7896', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body{
+
+	width:100%;
+	height:100%;
+	overflow:hidden;
+
+}
+
+#wrap {
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+#center {
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+#kernel-runner {
+	border:#FFF solid 2px;
+	width:60px;
+	height:60px;
+	border-radius:40px;
+	transition:background 0.2s ease-in;
+}
+
+#kernel-runner:hover {
+	cursor:pointer;
+	background:rgba(0,0,0,0.4);
+}
+
+#kernel-runner img {
+	width:60px;
+	height:60px;
+}
