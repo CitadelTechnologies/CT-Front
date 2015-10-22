@@ -6,7 +6,7 @@ import(
     "net/http"
     "io/ioutil"
     "github.com/gorilla/mux"
-    "thw-front/errors"
+    "ct-front/errors"
 )
 
 type (

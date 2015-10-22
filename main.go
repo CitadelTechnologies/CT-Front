@@ -2,15 +2,14 @@ package main
 
 import (
     "net/http"
-    "thw-front/routing"
-    gs "github.com/Kern046/GleipnirServer"
+    "ct-front/routing"
+    "github.com/CitadelTechnologies/CT-Client"
 )
 
 func main() {
-
-    gs.Initialize()
+    ctclient.Initialize()
 
     router := routing.NewRouter()
 
-    http.ListenAndServe(":" + gs.Server.DedicatedPort, router)
+    http.ListenAndServe(":" + ctclient.Server.DedicatedPort, router)
 }
